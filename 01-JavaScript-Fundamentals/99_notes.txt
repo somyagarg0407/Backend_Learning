@@ -1,0 +1,48 @@
+const by default (you cant change the value after declaration)
+let when value changes (vice versa)
+JS automatically understands it’s a number.(isme no need to define its a int or its a float or ita a boolean normally write let x=100)
+
+let city = null;
+console.log(typeof city);= object;
+let city;
+console.log(typeof city);= undefined;
+
+here == use for checking the value only while === checking the value andf datatype both so use ===
+
+in JS no need to give teh void or int datatype for functions just type function greet(){......}
+--------------------------------------
+Arrow version:
+const square = (n) => {
+    return n * n;
+};
+
+Short version:
+const square = (n) => n * n;
+-----------------------------------------
+console.log(nums.length); for array length remember to not write ()
+-------------
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers);
+Output:
+[1, 2, 3, 4, 5]
+----------------------
+let nums = [10, 20, 30];
+for(let value of nums){
+    console.log(value);
+}
+------------------
+object banane ke baad bjhi koi property add karni hai toh object ke bahar bhi kar sakte hain 
+-----------------
+const result=[]; ---- use hai ki array empty defien kiya hua hai 
+-------------------
+filter()
+Returns only elements that satisfy condition.
+-------------------
+num => num + 10
+JS internally thinks:
+num => {
+    return num + 10;
+}
+means both are same but you can use shrter form for this to saave your time
+--------------------------
+for finding the first match of filter like jahan filter sabhi out put deta hai find wahan par only pehel match deta hai
