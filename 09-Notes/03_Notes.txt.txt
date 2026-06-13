@@ -1,0 +1,72 @@
+JavaScript = Driver
+Node.js = Car
+-----------------------
+V8 is the JavaScript engine created by: Google
+----------------------
+Browser provides:document, window, alert()
+Node provides:fs, path, http, os, events
+-------------------------------------
+             JavaScript
+                 |
+        ------------------
+        |                |
+     Browser          Node.js
+        |                |
+      DOM          File System
+      Window       Server
+      Alert        OS Access
+----------------------------
+What is Node.js?
+Why was Node.js created?
+What is a runtime environment?
+What is V8?
+How does Node execute JavaScript?
+-------------------------------
+Node.js is a single-threaded, event-driven, non-blocking runtime environment.
+---------------------------------------------
+        JavaScript Code
+               |
+               v
+         Event Loop
+               |
+    --------------------
+    |        |         |
+ File I/O  Timers   Network
+    |        |         |
+    -------------------
+               |
+          Callback Queue
+               |
+          Main Thread
+----------------------------------------
+Event loop check : "Koi completed task pending hai kya?"
+----------------------------------------
+Module	     -       Purpose
+fs    	             File handling
+path	                Path handling
+os	                   Operating system info
+events	             Event system
+http	                Create servers
+--------------------------------------------------
+without utf-8 raw bytes milte hain.
+Sync = blocking
+------------------------
+Object . Function()  // thsi is the genral structuire of syntax
+similarly in console.log conssole is object and log is Function
+-----------------------
+os-demo.js have so many things to learn so pls consider it during revision
+------------------
+in node    event -> listener -> action
+-------------------
+settime out and promiseresolve asyncronise hote hain and but event module syncronise hrta ghai matlab vo phele us task ko khata karege then aage badhega but in sync its vice versa happened
+--------------------------
+Laptop = Building, Port = Room Number
+-----------------------
+const server = http.createServer((req, res) => { // "Node, jab bhi koi browser request bheje, mujhe req me uski details de dena aur res me response bhejne ka tool de dena."
+------------------------------------
+node server.js → HTTP Module Load → Server Create → Port 3000 Listen → Browser Opens localhost:3000 → Request Arrives → (req, res) Callback Runs → res.end("Hello Panda") → Browser Shows: Hello Panda
+-----------------------------
+server baar baar create nahi hota but lekin callback har requyest par run karta hai
+-------------------------------
+ES = ECMA Script   ye full form ka hai ES ka
+--------------------------------
